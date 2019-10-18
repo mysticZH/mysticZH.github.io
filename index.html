@@ -142,29 +142,29 @@
           <div id="js-content" class="content-ll">
             
   
-    <article id="post-笔记本对比" class="article article-type-post  article-index" itemscope itemprop="blogPost">
+    <article id="post-shell脚本-2" class="article article-type-post  article-index" itemscope itemprop="blogPost">
   <div class="article-inner">
     
       <header class="article-header">
         
   
     <h1 itemprop="name">
-      <a class="article-title" href="/2019/08/13/笔记本对比/">笔记本对比</a>
+      <a class="article-title" href="/2019/10/11/shell脚本-2/">shell脚本(2)</a>
     </h1>
   
 
         
-        <a href="/2019/08/13/笔记本对比/" class="archive-article-date">
-  	<time datetime="2019-08-13T09:04:29.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2019-08-13</time>
+        <a href="/2019/10/11/shell脚本-2/" class="archive-article-date">
+  	<time datetime="2019-10-11T08:58:03.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2019-10-11</time>
 </a>
         
       </header>
     
     <div class="article-entry" itemprop="articleBody">
       
-        <p>。。
+        <figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line">groupadd  student</span><br><span class="line">for  i  in  `seq 1 5`</span><br><span class="line">do</span><br><span class="line">        useradd  -G  student  student$i;</span><br><span class="line">        echo  student$i | passwd student$i  --stdin;</span><br><span class="line">done</span><br></pre></td></tr></table></figure>
         
-          <a class="article-more-a" href="/2019/08/13/笔记本对比/#more">more >></a>
+          <a class="article-more-a" href="/2019/10/11/shell脚本-2/#more">more >></a>
         
       
 
@@ -178,7 +178,7 @@
 		<ul class="article-tag-list">
 			 
         		<li class="article-tag-list-item">
-        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color3">日常</a>
+        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color5">实验操作</a>
         		</li>
       		
 		</ul>
@@ -214,29 +214,174 @@
 
 
   
-    <article id="post-数据结构复习（3）栈和队列" class="article article-type-post  article-index" itemscope itemprop="blogPost">
+    <article id="post-shell脚本-1" class="article article-type-post  article-index" itemscope itemprop="blogPost">
   <div class="article-inner">
     
       <header class="article-header">
         
   
     <h1 itemprop="name">
-      <a class="article-title" href="/2019/08/12/数据结构复习（3）栈和队列/">数据结构复习（3）栈和队列</a>
+      <a class="article-title" href="/2019/10/11/shell脚本-1/">shell脚本(1)</a>
     </h1>
   
 
         
-        <a href="/2019/08/12/数据结构复习（3）栈和队列/" class="archive-article-date">
-  	<time datetime="2019-08-11T22:15:32.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2019-08-12</time>
+        <a href="/2019/10/11/shell脚本-1/" class="archive-article-date">
+  	<time datetime="2019-10-11T05:56:18.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2019-10-11</time>
 </a>
         
       </header>
     
     <div class="article-entry" itemprop="articleBody">
       
-        <h1 id="栈"><a href="#栈" class="headerlink" title="栈"></a>栈</h1><h2 id="基本概念"><a href="#基本概念" class="headerlink" title="基本概念"></a>基本概念</h2><p>Stack：只允许在一端进行插入或删除的线性表 </p>
+        <figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">#</span><span class="bash">!/bin/bash</span></span><br><span class="line"><span class="meta">#</span><span class="bash"><span class="built_in">set</span> -x</span></span><br><span class="line">if [ $# -ge 1 ] ; then</span><br><span class="line">    systemctl status $1 &gt; /dev/null;</span><br><span class="line">    if [ $? -eq 0 ] ; then</span><br><span class="line">        echo  "$1 is `systemctl status $1|sed -n 3p|awk '&#123;print $2,$3&#125;'`"</span><br><span class="line">    else</span><br><span class="line">        echo  "$1未运行, 或检查$1是否有效的服务名称！"</span><br><span class="line">    fi</span><br><span class="line">else</span><br><span class="line">    echo  "请在此命令后面加上参数 :sh $0 服务名称"</span><br><span class="line">fi</span><br></pre></td></tr></table></figure>
         
-          <a class="article-more-a" href="/2019/08/12/数据结构复习（3）栈和队列/#more">more >></a>
+          <a class="article-more-a" href="/2019/10/11/shell脚本-1/#more">more >></a>
+        
+      
+
+      
+    </div>
+    <div class="article-info article-info-index">
+      
+      
+	<div class="article-tag tagcloud">
+		<i class="icon-price-tags icon"></i>
+		<ul class="article-tag-list">
+			 
+        		<li class="article-tag-list-item">
+        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color5">实验操作</a>
+        		</li>
+      		
+		</ul>
+	</div>
+
+      
+
+      
+
+      
+      <div class="clearfix"></div>
+    </div>
+  </div>
+</article>
+
+<aside class="wrap-side-operation">
+    <div class="mod-side-operation">
+        
+        <div class="jump-container" id="js-jump-container" style="display:none;">
+            <a href="javascript:void(0)" class="mod-side-operation__jump-to-top">
+                <i class="icon-font icon-back"></i>
+            </a>
+            <div id="js-jump-plan-container" class="jump-plan-container" style="top: -11px;">
+                <i class="icon-font icon-plane jump-plane"></i>
+            </div>
+        </div>
+        
+        
+    </div>
+</aside>
+
+
+
+
+  
+    <article id="post-CDC（3）vlan435、436、汇聚" class="article article-type-post  article-index" itemscope itemprop="blogPost">
+  <div class="article-inner">
+    
+      <header class="article-header">
+        
+  
+    <h1 itemprop="name">
+      <a class="article-title" href="/2019/09/29/CDC（3）vlan435、436、汇聚/">CDC（3）vlan435、436、汇聚</a>
+    </h1>
+  
+
+        
+        <a href="/2019/09/29/CDC（3）vlan435、436、汇聚/" class="archive-article-date">
+  	<time datetime="2019-09-29T07:54:27.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2019-09-29</time>
+</a>
+        
+      </header>
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <h2 id="CDCExp2-3-公开到汇聚及核心"><a href="#CDCExp2-3-公开到汇聚及核心" class="headerlink" title="CDCExp2-3-公开到汇聚及核心"></a>CDCExp2-3-公开到汇聚及核心</h2>
+        
+          <a class="article-more-a" href="/2019/09/29/CDC（3）vlan435、436、汇聚/#more">more >></a>
+        
+      
+
+      
+    </div>
+    <div class="article-info article-info-index">
+      
+      
+	<div class="article-tag tagcloud">
+		<i class="icon-price-tags icon"></i>
+		<ul class="article-tag-list">
+			 
+        		<li class="article-tag-list-item">
+        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color5">实验操作</a>
+        		</li>
+      		
+		</ul>
+	</div>
+
+      
+
+      
+
+      
+      <div class="clearfix"></div>
+    </div>
+  </div>
+</article>
+
+<aside class="wrap-side-operation">
+    <div class="mod-side-operation">
+        
+        <div class="jump-container" id="js-jump-container" style="display:none;">
+            <a href="javascript:void(0)" class="mod-side-operation__jump-to-top">
+                <i class="icon-font icon-back"></i>
+            </a>
+            <div id="js-jump-plan-container" class="jump-plan-container" style="top: -11px;">
+                <i class="icon-font icon-plane jump-plane"></i>
+            </div>
+        </div>
+        
+        
+    </div>
+</aside>
+
+
+
+
+  
+    <article id="post-双代号网络图" class="article article-type-post  article-index" itemscope itemprop="blogPost">
+  <div class="article-inner">
+    
+      <header class="article-header">
+        
+  
+    <h1 itemprop="name">
+      <a class="article-title" href="/2019/09/29/双代号网络图/">双代号网络图</a>
+    </h1>
+  
+
+        
+        <a href="/2019/09/29/双代号网络图/" class="archive-article-date">
+  	<time datetime="2019-09-29T03:20:04.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2019-09-29</time>
+</a>
+        
+      </header>
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <ol>
+<li>绘制没有紧前工作的工作，使它们具有相同的开始节点，即起始节点。
+        
+          <a class="article-more-a" href="/2019/09/29/双代号网络图/#more">more >></a>
         
       
 
@@ -286,29 +431,29 @@
 
 
   
-    <article id="post-计网复习（1）体系结构" class="article article-type-post  article-index" itemscope itemprop="blogPost">
+    <article id="post-数据结构复习（5）图" class="article article-type-post  article-index" itemscope itemprop="blogPost">
   <div class="article-inner">
     
       <header class="article-header">
         
   
     <h1 itemprop="name">
-      <a class="article-title" href="/2019/08/10/计网复习（1）体系结构/">计网复习（1）体系结构</a>
+      <a class="article-title" href="/2019/09/28/数据结构复习（5）图/">数据结构复习（5）图</a>
     </h1>
   
 
         
-        <a href="/2019/08/10/计网复习（1）体系结构/" class="archive-article-date">
-  	<time datetime="2019-08-10T14:54:20.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2019-08-10</time>
+        <a href="/2019/09/28/数据结构复习（5）图/" class="archive-article-date">
+  	<time datetime="2019-09-28T11:09:53.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2019-09-28</time>
 </a>
         
       </header>
     
     <div class="article-entry" itemprop="articleBody">
       
-        <h2 id="标准化工作及相关组织"><a href="#标准化工作及相关组织" class="headerlink" title="标准化工作及相关组织"></a>标准化工作及相关组织</h2>
+        <h1 id="逻辑结构"><a href="#逻辑结构" class="headerlink" title="逻辑结构"></a>逻辑结构</h1>
         
-          <a class="article-more-a" href="/2019/08/10/计网复习（1）体系结构/#more">more >></a>
+          <a class="article-more-a" href="/2019/09/28/数据结构复习（5）图/#more">more >></a>
         
       
 
@@ -358,29 +503,159 @@
 
 
   
-    <article id="post-计网复习（2）物理层" class="article article-type-post  article-index" itemscope itemprop="blogPost">
+    <article id="post-CDC（2）vlan4092、433、434" class="article article-type-post  article-index" itemscope itemprop="blogPost">
   <div class="article-inner">
     
       <header class="article-header">
         
   
     <h1 itemprop="name">
-      <a class="article-title" href="/2019/08/10/计网复习（2）物理层/">计网复习（2）物理层</a>
+      <a class="article-title" href="/2019/09/25/CDC（2）vlan4092、433、434/">CDC（2）vlan4092、433、434</a>
     </h1>
   
 
         
-        <a href="/2019/08/10/计网复习（2）物理层/" class="archive-article-date">
-  	<time datetime="2019-08-10T06:43:36.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2019-08-10</time>
+        <a href="/2019/09/25/CDC（2）vlan4092、433、434/" class="archive-article-date">
+  	<time datetime="2019-09-25T07:56:22.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2019-09-25</time>
 </a>
         
       </header>
     
     <div class="article-entry" itemprop="articleBody">
       
-        <h2 id="基本概念"><a href="#基本概念" class="headerlink" title="基本概念"></a>基本概念</h2>
+        <h2 id="CDCExp2-1-pxe"><a href="#CDCExp2-1-pxe" class="headerlink" title="CDCExp2-1-pxe"></a>CDCExp2-1-pxe</h2><p>vlan 4092   (PXE—无网关)<br>Installer:1.1.10.10<br>Controller:1.1.10.11<br>Computer:1.1.10.12<br>Storage:1.1.10.13  </p>
         
-          <a class="article-more-a" href="/2019/08/10/计网复习（2）物理层/#more">more >></a>
+          <a class="article-more-a" href="/2019/09/25/CDC（2）vlan4092、433、434/#more">more >></a>
+        
+      
+
+      
+    </div>
+    <div class="article-info article-info-index">
+      
+      
+	<div class="article-tag tagcloud">
+		<i class="icon-price-tags icon"></i>
+		<ul class="article-tag-list">
+			 
+        		<li class="article-tag-list-item">
+        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color5">实验操作</a>
+        		</li>
+      		
+		</ul>
+	</div>
+
+      
+
+      
+
+      
+      <div class="clearfix"></div>
+    </div>
+  </div>
+</article>
+
+<aside class="wrap-side-operation">
+    <div class="mod-side-operation">
+        
+        <div class="jump-container" id="js-jump-container" style="display:none;">
+            <a href="javascript:void(0)" class="mod-side-operation__jump-to-top">
+                <i class="icon-font icon-back"></i>
+            </a>
+            <div id="js-jump-plan-container" class="jump-plan-container" style="top: -11px;">
+                <i class="icon-font icon-plane jump-plane"></i>
+            </div>
+        </div>
+        
+        
+    </div>
+</aside>
+
+
+
+
+  
+    <article id="post-CDC（1）visio绘制网络拓扑图" class="article article-type-post  article-index" itemscope itemprop="blogPost">
+  <div class="article-inner">
+    
+      <header class="article-header">
+        
+  
+    <h1 itemprop="name">
+      <a class="article-title" href="/2019/09/25/CDC（1）visio绘制网络拓扑图/">CDC（1）visio绘制网络拓扑图</a>
+    </h1>
+  
+
+        
+        <a href="/2019/09/25/CDC（1）visio绘制网络拓扑图/" class="archive-article-date">
+  	<time datetime="2019-09-25T07:41:44.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2019-09-25</time>
+</a>
+        
+      </header>
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        
+      
+
+      
+    </div>
+    <div class="article-info article-info-index">
+      
+      
+      
+
+      
+
+      
+      <div class="clearfix"></div>
+    </div>
+  </div>
+</article>
+
+<aside class="wrap-side-operation">
+    <div class="mod-side-operation">
+        
+        <div class="jump-container" id="js-jump-container" style="display:none;">
+            <a href="javascript:void(0)" class="mod-side-operation__jump-to-top">
+                <i class="icon-font icon-back"></i>
+            </a>
+            <div id="js-jump-plan-container" class="jump-plan-container" style="top: -11px;">
+                <i class="icon-font icon-plane jump-plane"></i>
+            </div>
+        </div>
+        
+        
+    </div>
+</aside>
+
+
+
+
+  
+    <article id="post-数据结构复习（4）树与二叉树" class="article article-type-post  article-index" itemscope itemprop="blogPost">
+  <div class="article-inner">
+    
+      <header class="article-header">
+        
+  
+    <h1 itemprop="name">
+      <a class="article-title" href="/2019/09/12/数据结构复习（4）树与二叉树/">数据结构复习（4）树与二叉树</a>
+    </h1>
+  
+
+        
+        <a href="/2019/09/12/数据结构复习（4）树与二叉树/" class="archive-article-date">
+  	<time datetime="2019-09-12T07:45:52.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2019-09-12</time>
+</a>
+        
+      </header>
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <h1 id="二叉树"><a href="#二叉树" class="headerlink" title="二叉树"></a>二叉树</h1>
+        
+          <a class="article-more-a" href="/2019/09/12/数据结构复习（4）树与二叉树/#more">more >></a>
         
       
 
@@ -430,87 +705,29 @@
 
 
   
-    <article id="post-Android-1-Activity及常用布局和控件的使用" class="article article-type-post  article-index" itemscope itemprop="blogPost">
+    <article id="post-期初摸底" class="article article-type-post  article-index" itemscope itemprop="blogPost">
   <div class="article-inner">
     
       <header class="article-header">
         
   
     <h1 itemprop="name">
-      <a class="article-title" href="/2019/08/09/Android-1-Activity及常用布局和控件的使用/">Android(1)Activity及常用布局和控件的使用</a>
+      <a class="article-title" href="/2019/09/04/期初摸底/">期初摸底</a>
     </h1>
   
 
         
-        <a href="/2019/08/09/Android-1-Activity及常用布局和控件的使用/" class="archive-article-date">
-  	<time datetime="2019-08-09T14:24:49.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2019-08-09</time>
+        <a href="/2019/09/04/期初摸底/" class="archive-article-date">
+  	<time datetime="2019-09-04T04:36:18.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2019-09-04</time>
 </a>
         
       </header>
     
     <div class="article-entry" itemprop="articleBody">
       
+        <h1 id="一-填空"><a href="#一-填空" class="headerlink" title="一.填空"></a>一.填空</h1>
         
-      
-
-      
-    </div>
-    <div class="article-info article-info-index">
-      
-      
-      
-
-      
-
-      
-      <div class="clearfix"></div>
-    </div>
-  </div>
-</article>
-
-<aside class="wrap-side-operation">
-    <div class="mod-side-operation">
-        
-        <div class="jump-container" id="js-jump-container" style="display:none;">
-            <a href="javascript:void(0)" class="mod-side-operation__jump-to-top">
-                <i class="icon-font icon-back"></i>
-            </a>
-            <div id="js-jump-plan-container" class="jump-plan-container" style="top: -11px;">
-                <i class="icon-font icon-plane jump-plane"></i>
-            </div>
-        </div>
-        
-        
-    </div>
-</aside>
-
-
-
-
-  
-    <article id="post-hello-world" class="article article-type-post  article-index" itemscope itemprop="blogPost">
-  <div class="article-inner">
-    
-      <header class="article-header">
-        
-  
-    <h1 itemprop="name">
-      <a class="article-title" href="/2019/08/08/hello-world/">Hello World</a>
-    </h1>
-  
-
-        
-        <a href="/2019/08/08/hello-world/" class="archive-article-date">
-  	<time datetime="2019-08-08T09:04:29.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2019-08-08</time>
-</a>
-        
-      </header>
-    
-    <div class="article-entry" itemprop="articleBody">
-      
-        <p>Welcome to <a href="https://hexo.io/" target="_blank" rel="noopener">Hexo</a>!
-        
-          <a class="article-more-a" href="/2019/08/08/hello-world/#more">more >></a>
+          <a class="article-more-a" href="/2019/09/04/期初摸底/#more">more >></a>
         
       
 
@@ -524,7 +741,7 @@
 		<ul class="article-tag-list">
 			 
         		<li class="article-tag-list-item">
-        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color5">test</a>
+        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color5">理论知识</a>
         		</li>
       		
 		</ul>
@@ -560,6 +777,82 @@
 
 
   
+    <article id="post-计网复习（3）数据链路层" class="article article-type-post  article-index" itemscope itemprop="blogPost">
+  <div class="article-inner">
+    
+      <header class="article-header">
+        
+  
+    <h1 itemprop="name">
+      <a class="article-title" href="/2019/09/02/计网复习（3）数据链路层/">计网复习（3）数据链路层</a>
+    </h1>
+  
+
+        
+        <a href="/2019/09/02/计网复习（3）数据链路层/" class="archive-article-date">
+  	<time datetime="2019-09-02T08:25:29.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2019-09-02</time>
+</a>
+        
+      </header>
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <h1 id="链路层的功能"><a href="#链路层的功能" class="headerlink" title="链路层的功能"></a>链路层的功能</h1>
+        
+          <a class="article-more-a" href="/2019/09/02/计网复习（3）数据链路层/#more">more >></a>
+        
+      
+
+      
+    </div>
+    <div class="article-info article-info-index">
+      
+      
+	<div class="article-tag tagcloud">
+		<i class="icon-price-tags icon"></i>
+		<ul class="article-tag-list">
+			 
+        		<li class="article-tag-list-item">
+        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color5">理论知识</a>
+        		</li>
+      		
+		</ul>
+	</div>
+
+      
+
+      
+
+      
+      <div class="clearfix"></div>
+    </div>
+  </div>
+</article>
+
+<aside class="wrap-side-operation">
+    <div class="mod-side-operation">
+        
+        <div class="jump-container" id="js-jump-container" style="display:none;">
+            <a href="javascript:void(0)" class="mod-side-operation__jump-to-top">
+                <i class="icon-font icon-back"></i>
+            </a>
+            <div id="js-jump-plan-container" class="jump-plan-container" style="top: -11px;">
+                <i class="icon-font icon-plane jump-plane"></i>
+            </div>
+        </div>
+        
+        
+    </div>
+</aside>
+
+
+
+
+  
+  
+    <nav id="page-nav">
+      <span class="page-number current">1</span><a class="page-number" href="/page/2/">2</a><a class="extend next" rel="next" href="/page/2/">Next &raquo;</a>
+    </nav>
   
 
 
@@ -660,11 +953,11 @@ return o(i(t),arguments.length<2?void 0:u(arguments[1]))}})},function(t,n,r){var
               </li>
              
               <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color5">理论知识</a>
+                <a href="javascript:void(0)" class="js-tag color5">实验操作</a>
               </li>
              
               <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color3">日常</a>
+                <a href="javascript:void(0)" class="js-tag color5">理论知识</a>
               </li>
             
             <div class="clearfix"></div>

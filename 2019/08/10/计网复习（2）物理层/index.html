@@ -17,7 +17,12 @@
 <meta property="og:description" content="基本概念">
 <meta property="og:locale" content="zh-Hans">
 <meta property="og:image" content="http://yoursite.com/2019/08/10/计网复习（2）物理层/%E5%85%B8%E5%9E%8B%E6%95%B0%E6%8D%AE%E9%80%9A%E4%BF%A1%E6%A8%A1%E5%9E%8B.PNG">
-<meta property="og:updated_time" content="2019-08-19T10:32:10.389Z">
+<meta property="og:image" content="http://yoursite.com/2019/08/10/计网复习（2）物理层/%E7%BC%96%E7%A0%81%E6%96%B9%E5%BC%8F.png">
+<meta property="og:image" content="http://yoursite.com/2019/08/10/计网复习（2）物理层/%E5%BD%92%E9%9B%B6%E7%BC%96%E7%A0%81.png">
+<meta property="og:image" content="http://yoursite.com/2019/08/10/计网复习（2）物理层/%E5%8F%8D%E5%90%91%E4%B8%8D%E5%BD%92%E9%9B%B6%E7%BC%96%E7%A0%81.png">
+<meta property="og:image" content="http://yoursite.com/2019/08/10/计网复习（2）物理层/%E8%B0%83%E5%88%B6.png">
+<meta property="og:image" content="http://yoursite.com/2019/08/10/计网复习（2）物理层/%E6%95%B0%E6%8D%AE%E6%8A%A5%E5%92%8C%E8%99%9A%E7%94%B5%E8%B7%AF.png">
+<meta property="og:updated_time" content="2019-09-01T08:43:53.738Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="计网复习（2）物理层">
 <meta name="twitter:description" content="基本概念">
@@ -169,10 +174,11 @@
       
         <h2 id="基本概念"><a href="#基本概念" class="headerlink" title="基本概念"></a>基本概念</h2><a id="more"></a>
 <p>传输数据比特流<br>主要任务：接口——&gt;定义标准<br>1.机械特性：引线数目、引脚数量<br>2.电气特性：电压范围、传输数率、距离限制<br>3.功能特性：某一电平表示何种意义<br>4.规程特性：规程（过程）和时序</p>
-<h2 id="通信基础"><a href="#通信基础" class="headerlink" title="通信基础"></a>通信基础</h2><p><img src="%E5%85%B8%E5%9E%8B%E6%95%B0%E6%8D%AE%E9%80%9A%E4%BF%A1%E6%A8%A1%E5%9E%8B.PNG" alt="典型数据通信模型"></p>
-<center>图1 典型数据通信模型</center>
-
-<p>信宿：接受数据的终点<br>信道：信号的传输媒介。有方向，分为发送和接收<br>全双工、半双工、单工通信<br>串行、并行<br>同步传输：数据区块，区块传输。同步字符<br>异步传输：起始位、终止位<br>码间串扰：失去码元之间清晰的界限<br>信道带宽：能通过最高频和最低频之差<br>码元：固定时长的信号波形（数字脉冲）——&gt;不同离散数值的基本波形。时长内的信号成为k进制码元，该时长称为码元宽度。当码元的离散状态有M个时，称为M进制码元。  </p>
+<h2 id="通信基础"><a href="#通信基础" class="headerlink" title="通信基础"></a>通信基础</h2><p><img src="%E5%85%B8%E5%9E%8B%E6%95%B0%E6%8D%AE%E9%80%9A%E4%BF%A1%E6%A8%A1%E5%9E%8B.PNG" alt="图1">  </p>
+<h3 id="术语"><a href="#术语" class="headerlink" title="术语"></a>术语</h3><p>信宿：接受数据的终点<br>信道：信号的传输媒介。有方向，分为发送和接收<br>码间串扰：失去码元之间清晰的界限<br>信道带宽：能通过最高频和最低频之差<br>码元：固定时长的信号波形（数字脉冲）——&gt;不同离散数值的基本波形。时长内的信号成为k进制码元，该时长称为码元宽度。当码元的离散状态有M个时，称为M进制码元。<br>带宽：在数字设备中，表示在单位时间内从网络中的某一点到另一点所能通过的<strong>“最高数据率”</strong>/单位时间内通过链路的数量，常用来表示网络的通信线路所能传数据的能力。单位是比特每秒（b/s）。</p>
+<h3 id="通信方式"><a href="#通信方式" class="headerlink" title="通信方式"></a>通信方式</h3><p>全双工、半双工、单工通信  </p>
+<h3 id="数据传输方式"><a href="#数据传输方式" class="headerlink" title="数据传输方式"></a>数据传输方式</h3><p>串行、并行</p>
+<h3 id="传输方式"><a href="#传输方式" class="headerlink" title="传输方式"></a>传输方式</h3><p>同步传输：数据区块，区块传输。同步字符<br>异步传输：起始位、终止位  </p>
 <h3 id="数字通信系统数据传输速率的两种表示方式"><a href="#数字通信系统数据传输速率的两种表示方式" class="headerlink" title="数字通信系统数据传输速率的两种表示方式"></a>数字通信系统数据传输速率的两种表示方式</h3><p>速率也叫数据率，是指数据的传输数率，表示单位时间内传输的数据量。可以用<strong>码元传输数率</strong>和<strong>信息传输速率</strong>表示。<br>（1）码元传输数率：<br>单位时间内数字通信系统所传输的码元个数（脉冲个数、信号变化的次数）。码元速率与进制数无关，只与码元长度T有关<br>R<sub>B</sub>=1/T(B)<br>（2）信息传输速率：<br>单位时间内数字通信系统传输的二进制码元个数（即比特数） </p>
 <figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">【例】某一数字通信系统传输的是四进制码元，4s传输了8000个码元，求系统的码元传输速率是多少？信息传输速率是多少？若另一通信系统传输的是十六进制码元，6s传输了7200个码元，求他的码元传输速率是多少？信息传输速率是多少？并指出哪个系统传输速率快？</span><br><span class="line"></span><br><span class="line">答：1.码元传输数率2000B，信息传输速率4000bit/s</span><br><span class="line">    2.码元传输数率1200B，信息传输速率4800bit/s</span><br><span class="line">    第二个系统更快。系统传输的是比特流，通常比较的是信息传输速率。</span><br></pre></td></tr></table></figure>
 
@@ -185,9 +191,45 @@
 <p>二进制信号——&gt;一码元对应1bit<br>四进制信号——&gt;一码元对应2bit</p>
 <figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">【例】二进制信号在信噪比为127:1的4kHz信道上传输，最大的数据速率可达到多少？</span><br><span class="line"></span><br><span class="line">答：香农：4000*log2（1+127）=28kb/s</span><br><span class="line">    奈式：2*4000*log2（2）=8kb/s</span><br><span class="line">    所以最大的数据速率为8kb/s</span><br></pre></td></tr></table></figure>
 
-<h2 id="编码与调制"><a href="#编码与调制" class="headerlink" title="编码与调制"></a>编码与调制</h2><h2 id="数据交换方式"><a href="#数据交换方式" class="headerlink" title="数据交换方式"></a>数据交换方式</h2><p>电路交换<br>报文交换<br>分组交换</p>
-<h2 id="传输介质"><a href="#传输介质" class="headerlink" title="传输介质"></a>传输介质</h2><p>导向传输介质<br>非导向传输介质</p>
-<h2 id="物理层设备"><a href="#物理层设备" class="headerlink" title="物理层设备"></a>物理层设备</h2><p>中继器<br>集线器</p>
+<h2 id="编码与调制"><a href="#编码与调制" class="headerlink" title="编码与调制"></a>编码与调制</h2><p>1.基带信号<br>将数字信号1和0直接用两种不同的电压表示，再送到<strong>数字信道</strong>上去传输（基带传输）。<br><strong>来自信源</strong>的信号，像计算机输出的代表各种文字或图像文件的数据信号。基带信号就是发出的<strong>直接表达了要传输的信息的信号</strong>，比如我们说话的声波。  </p>
+<p>2.宽带信号<br>将基带信号进行调制后形成的频分复用模拟信号，再传送到模拟信道上去传输（宽带传输）。<br>把基带信号经过<strong>载波调制</strong>后，把信号的<strong>频率范围</strong>搬移到<strong>较高的频段</strong>以便在信道中传输（即仅在一段频率范围内能够通过信道）。</p>
+<h3 id="数字数据编码为数字信号"><a href="#数字数据编码为数字信号" class="headerlink" title="数字数据编码为数字信号"></a>数字数据编码为数字信号</h3><p><strong>（1）非归零编码【NRZ】</strong><br>高1低0。编码容易实现，但没有检错功能，且无法判断一个码元的开始和结束，以至于收发双方<strong>难以保持同步</strong>。  </p>
+<p><strong>（2）曼彻斯特编码</strong><br>将一个码元分成两个相等的间隔，前一个间隔为低电平后一个间隔为高电平表示码元1；码元0则正好相反。也可以采用相反的规定。该编码的特点是在每一个码元的中间出现电平跳变，位中间的跳变既作时钟信号（可用于同步），又作数据信号，但它所占的频带宽度是原始的基带宽度的两倍。<br><code>数据传输速率只有调制速率的1/2</code>  </p>
+<p><strong>（3）差分曼彻斯特编码</strong><br>同1异0。常用于局域网传输，其规则是：若码元为1，则前半个码元的电平与上一个码元的后半个码元的电平相同；若为0，则相反。该编码的特点是，在每个码元的中间，都有一次电平的跳转，可以实现自同步，且抗干扰性强于曼彻斯特编码。<br><img src="%E7%BC%96%E7%A0%81%E6%96%B9%E5%BC%8F.png" alt="图2">  </p>
+<p>（4）归零编码【RZ】<br>信号电平在一个码元之内都要恢复到零的这种编码成编码方式。<br><img src="%E5%BD%92%E9%9B%B6%E7%BC%96%E7%A0%81.png" alt="图3">  </p>
+<p>（5）反向不非归零编码【NRZI】<br>信号电平翻转表示0，信号电平不变表示1。<br><img src="%E5%8F%8D%E5%90%91%E4%B8%8D%E5%BD%92%E9%9B%B6%E7%BC%96%E7%A0%81.png" alt="图4">  </p>
+<p>（6）4B/5B编码<br>比特流中插入额外的比特以打破一连串的0或1，就是用5个比特来编码4个比特的数据，之后再传给接收方，因此称为4B/5B。编码效率为80%。  </p>
+<h3 id="模拟数据编码为数字信号"><a href="#模拟数据编码为数字信号" class="headerlink" title="模拟数据编码为数字信号"></a>模拟数据编码为数字信号</h3><p><img src="%E8%B0%83%E5%88%B6.png" alt="图5"></p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">调相+调幅（QAM）</span><br><span class="line">【例】某通信链路的波特率是1200Baud，采用4个相位，每个相位有4种振幅的QAM调制技术，则该链路的信息传输速率是多少？</span><br><span class="line"></span><br><span class="line">答：码元4×4种——&gt;16进制信号、一码元对应4bit</span><br><span class="line">    传输数率1200×4=4800b/s</span><br></pre></td></tr></table></figure>
+
+<h3 id="数字数据解调为模拟信号"><a href="#数字数据解调为模拟信号" class="headerlink" title="数字数据解调为模拟信号"></a>数字数据解调为模拟信号</h3><h3 id="模拟数据转化为模拟信号"><a href="#模拟数据转化为模拟信号" class="headerlink" title="模拟数据转化为模拟信号"></a>模拟数据转化为模拟信号</h3><h2 id="数据交换方式"><a href="#数据交换方式" class="headerlink" title="数据交换方式"></a>数据交换方式</h2><h3 id="电路交换"><a href="#电路交换" class="headerlink" title="电路交换"></a>电路交换</h3><p>原理：在数据传输期间，源结点与目的结点之间有一条由中间结点构成的专用物理连接线路，在数据传输结束之前，这条线路一直保持。  </p>
+<p>阶段：建立连接——&gt;通信——&gt;释放连接  </p>
+<p><strong>独占资源</strong>，用户始终占用端到端的固定传输带宽。适用于远程批处理信息传输或系统间实时性要求高的大量数据传输的情况。  </p>
+<h3 id="报文交换"><a href="#报文交换" class="headerlink" title="报文交换"></a>报文交换</h3><p>原理：存储转发  </p>
+<p>当端到端的通路有很多段的链路组成时，采用分组交换传送数据较为合适。</p>
+<h3 id="分组交换"><a href="#分组交换" class="headerlink" title="分组交换"></a>分组交换</h3><p>原理：存储转发。分组交换网中要限制所传输的数据单位的长度，一般选128B。发送节点首先对从终端设备送来的数据报文进行接收、存储，而后将报文划分成一定长度的分组，并以分组为单位进行传输和交换。接收结点将收到的分组组装成信息或报文。  </p>
+<p>从信道利用率上看，报文交换和分组交换优于电路交换，其中分组交换比报文交换的时延小，尤其适合于计算机之间的突发式的数据通信。</p>
+<h4 id="数据报"><a href="#数据报" class="headerlink" title="数据报"></a>数据报</h4><p>1.数据报方式为网络层提供<strong>无连接服务</strong>。发送方可随时发送分组，网络中的结点可随时接收分组。  </p>
+<p>2.同一报文的不同分组达到目的结点时可能发生乱序、重复与丢失。</p>
+<p>3.每个分组在传输过程中都必须携带源地址和目的地址，以及分组号。</p>
+<p>4.分组在交换结点存储转发时，需要排队等候处理，这会带来一定的时延。当通过交换结点的通信量较大或网络发生拥塞时，这种时延会大大增加，交换结点还可根据情况丢弃部分分组。</p>
+<p>5.网络具有冗余路径，当某一交换结点或一段链路出现故障时，可相应地更新转发表，寻找另一条路径转发分组，对故障的适应能力强，适用于突发性通信，不适于长报文、会话式通信。</p>
+<h4 id="虚电路"><a href="#虚电路" class="headerlink" title="虚电路"></a>虚电路</h4><p>1.虚电路方式为网络层提供<strong>连接服务</strong>。源节点与目的结点之间建立一条逻辑连接，而非实际物理连接。</p>
+<p>2.一次通信的所有分组都通过虚电路顺序传送，分组不需携带源地址、目的地址等信息，包含<strong>虚电路号</strong>，相对数据报方式开销小，同一报文的不同分组到达目的结点时不会乱序、重复或丢失。</p>
+<p>3.分组通过虚电路上的每个节点时，节点只进行差错检测，不需进行路由选择。</p>
+<p>4.每个节点可能与多个节点之间建立多条虚电路，每条虚电路支持特定的两个端系统之间的数据传输，可以对两个数据端点的流量进行控制，两个端系统之间也可以有多条虚电路为不同的进程服务。</p>
+<p>5.致命弱点：当网络中的某个结点或某条链路出故障而彻底失效时，则所有经过该结点或该链路的虚电路将遭到破坏</p>
+<p><img src="%E6%95%B0%E6%8D%AE%E6%8A%A5%E5%92%8C%E8%99%9A%E7%94%B5%E8%B7%AF.png" alt="tu6"></p>
+<h2 id="传输介质"><a href="#传输介质" class="headerlink" title="传输介质"></a>传输介质</h2><h3 id="导向传输介质"><a href="#导向传输介质" class="headerlink" title="导向传输介质"></a>导向传输介质</h3><p>固体媒介（铜线/光纤）  </p>
+<p>1.双绞线<br>距离太远时，对于<strong>模拟传输</strong>，要用<strong>放大器</strong>放大衰减的信号；<br>对于<strong>数字传输</strong>，要用<strong>中继器</strong>将失真的信号整形。</p>
+<p>2.同轴电缆<br>基带数字信号、宽带数字信号  </p>
+<p>3.光纤<br>多模光纤、单模光纤</p>
+<h3 id="非导向传输介质"><a href="#非导向传输介质" class="headerlink" title="非导向传输介质"></a>非导向传输介质</h3><p>自由空间（空气/真空/海水）</p>
+<p>1.无线电波<br>所有方向<br>较强穿透能力，可传远距离，广泛用于通信领域（如手机通信、无线局域网）。</p>
+<p>2.微波<br>固定方向<br>地面微波接力通信、卫星通信</p>
+<p>3.红外线、激光<br>固定方向<br>把要传输的信号分别转换为各自的信号格式，即红外光信号和激光信号，再在空间中传播。</p>
+<h2 id="物理层设备"><a href="#物理层设备" class="headerlink" title="物理层设备"></a>物理层设备</h2><h3 id="中继器"><a href="#中继器" class="headerlink" title="中继器"></a>中继器</h3><p>再生和还原数组信号<br>两端的网络部分是网络而不是子网，适用于完全相同的两类网络的互连，且两个网段速率要相同。<br>5-4-3规则：5个网段，4个设备，3个段能连接计算机</p>
+<h3 id="集线器（多口中继器）"><a href="#集线器（多口中继器）" class="headerlink" title="集线器（多口中继器）"></a>集线器（多口中继器）</h3><p>不具备信号的定向传送能力，是一个共享式设备（广播）<br>集线器不能分割冲突域——&gt;连在集线器上的工作主机平分带宽  </p>
 
       
 
@@ -258,7 +300,7 @@
                 </span>
                 <span class="tooltip-content">
                     <div class="toc-article">
-                    <ol class="toc"><li class="toc-item toc-level-2"><a class="toc-link" href="#基本概念"><span class="toc-number">1.</span> <span class="toc-text">基本概念</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#通信基础"><span class="toc-number">2.</span> <span class="toc-text">通信基础</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#数字通信系统数据传输速率的两种表示方式"><span class="toc-number">2.1.</span> <span class="toc-text">数字通信系统数据传输速率的两种表示方式</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#两个公式"><span class="toc-number">3.</span> <span class="toc-text">两个公式</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#奈氏准则（奈奎斯特定理）"><span class="toc-number">3.1.</span> <span class="toc-text">奈氏准则（奈奎斯特定理）</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#香农定理"><span class="toc-number">3.2.</span> <span class="toc-text">香农定理</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#编码与调制"><span class="toc-number">4.</span> <span class="toc-text">编码与调制</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#数据交换方式"><span class="toc-number">5.</span> <span class="toc-text">数据交换方式</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#传输介质"><span class="toc-number">6.</span> <span class="toc-text">传输介质</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#物理层设备"><span class="toc-number">7.</span> <span class="toc-text">物理层设备</span></a></li></ol>
+                    <ol class="toc"><li class="toc-item toc-level-2"><a class="toc-link" href="#基本概念"><span class="toc-number">1.</span> <span class="toc-text">基本概念</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#通信基础"><span class="toc-number">2.</span> <span class="toc-text">通信基础</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#术语"><span class="toc-number">2.1.</span> <span class="toc-text">术语</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#通信方式"><span class="toc-number">2.2.</span> <span class="toc-text">通信方式</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#数据传输方式"><span class="toc-number">2.3.</span> <span class="toc-text">数据传输方式</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#传输方式"><span class="toc-number">2.4.</span> <span class="toc-text">传输方式</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#数字通信系统数据传输速率的两种表示方式"><span class="toc-number">2.5.</span> <span class="toc-text">数字通信系统数据传输速率的两种表示方式</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#两个公式"><span class="toc-number">3.</span> <span class="toc-text">两个公式</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#奈氏准则（奈奎斯特定理）"><span class="toc-number">3.1.</span> <span class="toc-text">奈氏准则（奈奎斯特定理）</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#香农定理"><span class="toc-number">3.2.</span> <span class="toc-text">香农定理</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#编码与调制"><span class="toc-number">4.</span> <span class="toc-text">编码与调制</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#数字数据编码为数字信号"><span class="toc-number">4.1.</span> <span class="toc-text">数字数据编码为数字信号</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#模拟数据编码为数字信号"><span class="toc-number">4.2.</span> <span class="toc-text">模拟数据编码为数字信号</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#数字数据解调为模拟信号"><span class="toc-number">4.3.</span> <span class="toc-text">数字数据解调为模拟信号</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#模拟数据转化为模拟信号"><span class="toc-number">4.4.</span> <span class="toc-text">模拟数据转化为模拟信号</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#数据交换方式"><span class="toc-number">5.</span> <span class="toc-text">数据交换方式</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#电路交换"><span class="toc-number">5.1.</span> <span class="toc-text">电路交换</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#报文交换"><span class="toc-number">5.2.</span> <span class="toc-text">报文交换</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#分组交换"><span class="toc-number">5.3.</span> <span class="toc-text">分组交换</span></a><ol class="toc-child"><li class="toc-item toc-level-4"><a class="toc-link" href="#数据报"><span class="toc-number">5.3.1.</span> <span class="toc-text">数据报</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#虚电路"><span class="toc-number">5.3.2.</span> <span class="toc-text">虚电路</span></a></li></ol></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#传输介质"><span class="toc-number">6.</span> <span class="toc-text">传输介质</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#导向传输介质"><span class="toc-number">6.1.</span> <span class="toc-text">导向传输介质</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#非导向传输介质"><span class="toc-number">6.2.</span> <span class="toc-text">非导向传输介质</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#物理层设备"><span class="toc-number">7.</span> <span class="toc-text">物理层设备</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#中继器"><span class="toc-number">7.1.</span> <span class="toc-text">中继器</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#集线器（多口中继器）"><span class="toc-number">7.2.</span> <span class="toc-text">集线器（多口中继器）</span></a></li></ol></li></ol>
                     </div>
                 </span>
             </div>
@@ -377,11 +419,11 @@ return o(i(t),arguments.length<2?void 0:u(arguments[1]))}})},function(t,n,r){var
               </li>
              
               <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color5">理论知识</a>
+                <a href="javascript:void(0)" class="js-tag color5">实验操作</a>
               </li>
              
               <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color3">日常</a>
+                <a href="javascript:void(0)" class="js-tag color5">理论知识</a>
               </li>
             
             <div class="clearfix"></div>
